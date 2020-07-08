@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+cd `dirname $0`
+
+docker run --rm -e 'TZ=Asia/Tokyo' tfrkd/sukusho node app.js $1
